@@ -10,6 +10,8 @@
 
 /* count = count + 1; is the same as count++; */
 
+/* delete this comment */
+
 alert("Brush your teeth twice a day! Don't forget to floss!");
 
 var firstName = "Jade";
