@@ -20,6 +20,14 @@ var sum = oneNumber + secondNumber;
 
 var jadeAge = 20;
 
+var count = 0;
+
+while (count < 10) {
+  console.log("The current loop is " + count);
+  console.log(oneNumber, sum);
+  count = count + 1;
+}
+
 if (jadeAge < 21) {
   console.log("Get out of my bar you rotten kids!");
 } else {
