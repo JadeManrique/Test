@@ -10,7 +10,7 @@
 
 /* count = count + 1; is the same as count++; */
 
-/* delete this comment */
+/* delete this comment again */
 
 alert("Brush your teeth twice a day! Don't forget to floss!");
 
