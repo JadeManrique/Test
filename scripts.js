@@ -8,6 +8,8 @@
 !=: should not be the same as left side
 */
 
+/* count = count + 1; is the same as count++; */
+
 alert("Brush your teeth twice a day! Don't forget to floss!");
 
 var firstName = "Jade";
@@ -20,12 +22,15 @@ var sum = oneNumber + secondNumber;
 
 var jadeAge = 20;
 
+// count practice //
+
 var count = 0;
+var firstLine = "*";
 
 while (count < 10) {
-  console.log("The current loop is " + count);
-  console.log(oneNumber, sum);
-  count = count + 1;
+  console.log(firstLine);
+  firstLine += "*";
+  count++;
 }
 
 if (jadeAge < 21) {
