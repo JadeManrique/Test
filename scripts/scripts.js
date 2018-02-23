@@ -10,37 +10,47 @@
 
 /* count = count + 1; is the same as count++; */
 
-/* delete this comment again again */
+//variables
+var name = "Jade";
+var lastName = "Manrique";
+var num1 = 100;
+var num2 = 320;
+var never = true;
 
-alert("Brush your teeth twice a day! Don't forget to floss!");
-
-var firstName = "Jade";
-
-var oneNumber = 200;
-
-var secondNumber = 1;
-
-var sum = oneNumber + secondNumber;
-
-var jadeAge = 20;
-
-// count practice //
-
-var count = 0;
-var firstLine = "*";
-
-while (count < 10) {
-  console.log(firstLine);
-  firstLine += "*";
-  count++;
+//for loops
+for (var i = 0; i < 10; i++) {
+  //console.log(name);
+  name += "*";
 }
 
-if (jadeAge < 21) {
-  console.log("Get out of my bar you rotten kids!");
-} else {
-  console.log("Party on Wayne!")
+//if statements
+if (never) {
+  if (num1 < num2){
+    //console.log("Two ifs in one");
+  }
 }
 
-console.log(sum);
-console.log(firstName);
-console.log(true, false);
+if (num1 < num2) {
+  for (var d = 0; d < 10; d++) {
+    console.log("Yes");
+  }
+}
+
+if (name == "Jade") {
+  //console.log("Example using strings");
+}
+
+//arrays
+var crab = [name, lastName, num1, num2];
+
+//console.log examples
+console.log(never);
+
+console.log(num1 + num2);
+
+//functions
+function myFirstFunction() {
+  console.log("My first function! Yay!");
+}
+
+myFirstFunction();
