@@ -1,31 +1,13 @@
-var name = "Jade";
-var bacon = "Bacon";
+var quotes = [
+  "Life is just a ride.",
+  "Listen. Smile. Agree. And do whatever the hell you were going to do anyway.",
+  "Be happy. Don't worry, be happy now",
+  "Skate or die.",
+  "We are all elements of the universe experiencing itself and learning about itself.",
+  "Empty your mind, be formless, shapeless — like water. Now you put water in a cup, it becomes the cup; You put water into a bottle it becomes the bottle; You put it in a teapot it becomes the teapot. Now water can flow or it can crash. Be water, my friend."
+];
 
-function myFirstFunction(name) {
-  console.log(bacon);
-}
+var randomNumber = Math.random() * 6;
+randomNumber = Math.floor(randomNumber);
 
-myFirstFunction("bring tacos please");
-myFirstFunction("bring burritos too!");
-
-for (var i = 0; i < 10; i++) {
-  console.log(bacon);
-  bacon += "!";
-}
-
-myFirstFunction(name);
-
-console.log("top secret text! you win absolutely nothing!");
-
-var text = '<p> I am rich. </p>';
-var no = '<p> Refresh page and answer again. </p>';
-var yes = '<p> Okay. Type in all your banking information please. </p>';
-var day = 'Basic Day';
-
-day = prompt("Do you want all my money?");
-
-if (day == "no") {
-  document.getElementById("Test").innerHTML = no;
-} else if (day == "yes") {
-  document.getElementById("Test").innerHTML = yes;
-}
+document.getElementById("Test").innerHTML = quotes[randomNumber];
