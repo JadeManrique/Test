@@ -10,6 +10,14 @@
 
 /* count = count + 1; is the same as count++; */
 
+document.getElementById("Test").innerHTML = "Test";
+
+document.getElementByClassName("Test").innerHTML = "Test";
+
+var html = document.getElementById("test");
+
+html.getElementByClassName("words").innerHTML = "This is inside";
+
 //variables
 var name = "Jade";
 var lastName = "Manrique";
