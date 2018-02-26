@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar');
+
+.loginform {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.loginform p {
+  font-family: 'Mukta Malar', sans-serif;
+}
