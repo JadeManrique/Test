@@ -110,3 +110,68 @@ var sum = num1 + num2;
 console.log(sum);
 
 document.getElementById('Test').innerHTML = "<h1 style=text-align:center;padding-top:300px;>" + sum + "</h1>";
+
+// random quote generator
+
+var quotes = [
+  "Life is just a ride.",
+  "Listen. Smile. Agree. And do whatever the hell you were going to do anyway.",
+  "Be happy. Don't worry, be happy now",
+  "Skate or die.",
+  "We are all elements of the universe experiencing itself and learning about itself.",
+  "Empty your mind, be formless, shapeless — like water. Now you put water in a cup, it becomes the cup; You put water into a bottle it becomes the bottle; You put it in a teapot it becomes the teapot. Now water can flow or it can crash. Be water, my friend."
+];
+
+var randomNumber = Math.random() * quotes.length;
+randomNumber = Math.floor(randomNumber);
+
+document.getElementById("Test").innerHTML = quotes[randomNumber];
+
+
+// another calculator
+
+//html paart
+/* <div>
+  <form>
+    <input id="num1" type="text" />
+      <p> integers </p>
+    <input id="num2" type="text" />
+      <p> = </p>
+    <input id="results" type="text" />
+  </form>
+</div>
+
+<button onclick="multiply()"> * </button>
+<button onclick="divide()"> % </button>
+<button onclick="add()"> + </button>
+<button onclick="subtract()"> - </button>
+*/
+
+function multiply() {
+  var firstNumber = document.getElementById("num1").value;
+  var secondNumber = document.getElementById("num2").value;
+  var product = Number.parseInt(firstNumber) * Number.parseInt(secondNumber);
+  console.log(product);
+  document.getElementById("results").value = product;
+}
+
+function divide() {
+  var firstNumber = document.getElementById("num1").value;
+  var secondNumber = document.getElementById("num2").value;
+  var quotient = Number.parseInt(firstNumber) / Number.parseInt(secondNumber);
+  document.getElementById("results").value = quotient;
+}
+
+function add() {
+  var firstNumber = document.getElementById("num1").value;
+  var secondNumber = document.getElementById("num2").value;
+  var sum = Number.parseInt(firstNumber) + Number.parseInt(secondNumber);
+  document.getElementById("results").value = sum;
+}
+
+function subtract() {
+  var firstNumber = document.getElementById("num1").value;
+  var secondNumber = document.getElementById("num2").value;
+  var difference = Number.parseInt(firstNumber) - Number.parseInt(secondNumber);
+  document.getElementById("results").value = difference;
+}
