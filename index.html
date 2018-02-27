@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The Database</title>
-  <meta name="description" content="The Database">
-  <meta name="author" content="SitePoint">
+  <title>Top Secret Database</title>
+  <meta name="description" content="The Database" />
+  <meta name="author" content="SitePoint" />
   <link rel="icon" type="image/png" href="img/globe.png" />
   <link rel="stylesheet" href="css/styles.css" />
   <script src="scripts/scripts2.js"></script>
@@ -18,16 +18,33 @@
   <![endif]-->
 </head>
 
-<body id="test">
-  <div class="loginform">
+<body>
+
+  <div class="quoteGenerator">
+    <p id="test"></p>
+    <button onclick="quotes()"> Random Quote </button>
+  </div>
+
+  <div class="loginForm">
     <form>
-      <input id="username" type="text"/>
+      <input id="username" type="text" />
         <p> Username </p>
       <input id="password" type="password" />
         <p> Password </p>
     </form>
     <button onclick="myFunction()"> Enter </button>
   </div>
+
+  <div class="textGenerator">
+    <input id="myText" type="text" value="Type here. Goes there." />
+    <button onclick="textDemo()"> Try this out, bro! </button>
+    <p id="demo"></p>
+  </div>
+
+  <div class="theButton">
+    <button onclick="superCheese()"> :) </button>
+  </div>
+
 </body>
 
 </html>
